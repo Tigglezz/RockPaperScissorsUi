@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+ <body>
+     <h1>Rock Paper Scissors</h1>
+     <div id="container">
+        <div class="items">
+            <h2>Player</h2>
+            <div id="player-health">
+                <img src="heart.png" class="heart" id="full">
+                <img src="heart.png" class="heart" id="full">
+                <img src="heart.png" class="heart" id="full">
+                <img src="heart.png" class="heart" id="full">
+                <img src="heart.png" class="heart" id="full">
+            </div>
+            <div class = "option" id="player-game">
+                <input id='rock' onclick=startGame(id) class='btn' type='image' src="rock.png"/>
+                <input id='paper' onclick=startGame(id) class='btn' type='image' src="paper.png"/>
+                <input id='scissors' onclick=startGame(id) class='btn' type='image' src="scissors.png"/>
+            </div>
+            <div id="player-results"></div>
+            
+        </div>
+        <div id="playzone">
+            <div id="plays"></div>
+            
+        </div>
+        <div class="items">
+            <h3>Computer</h3>
+            <div id="computer-health">
+                <img src="heart.png" class="heart">
+                <img src="heart.png" class="heart">
+                <img src="heart.png" class="heart">
+                <img src="heart.png" class="heart">
+                <img src="heart.png" class="heart">
+            </div>
+            <div class="comp-option">
+                <img id="comp-rock" src="rock.png"/>
+                <img id="comp-paper" src="paper.png"/>
+                <img id="comp-scissors" src="scissors.png"/>
+            </div>
+            <div id="computer-results">
+                </div>
+        </div>
+        
+     </div>
+     <div id="final-results"></div>
+     <script type="text/javascript" src="script.js"></script>
+ </body>
+</html>
